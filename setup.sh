@@ -6,6 +6,7 @@ sudo apt -y upgrade
 sudo apt install -y python3 python3-pip apache2 libapache2-mod-wsgi-py3
 
 sudo rm -fr /tmp/flaskapp
+sudo rm -fr /var/www/flaskapp
 
 cd /tmp
 
