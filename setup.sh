@@ -5,15 +5,13 @@ sudo apt -y upgrade
 
 sudo apt install -y python3 python3-pip apache2 libapache2-mod-wsgi-py3
 
-rm -fr /tmp/flaskapp
+sudo rm -fr /tmp/flaskapp
 
 cd /tmp
 
 sudo git clone https://github.com/pbeniwal/flaskapp
 
-mkdir -p /var/www/flaskapp
-
-cp flaskapp/* /var/www/flaskapp/
+sudo mv flaskapp/ /var/www/
 
 sudo pip install -r /var/www/flaskapp/requirements.txt
 
